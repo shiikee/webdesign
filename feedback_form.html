@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <link rel="icon" type="image/png" href="image/logo12.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Afacad' rel='stylesheet'>
+</head>
+<body id="b2">
+
+    <header>
+
+        <input type="checkbox" name="" id="chck1">
+
+        <div class="logo"><a href="homepage.html">WellnessHaven</a></div>
+
+        <div class="search-box">
+
+            <form action="">
+
+                <input type="text" name="search" id="srch" placeholder="Search Here">
+                <button type="submit"><i class="fa fa-search"></i></button>
+
+            </form>
+
+        </div>
+
+        <ul>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="about_us.html" target = "_blank">About Us</a></li>
+            <li><a href="contact_us.html" target = "_blank">Contact Us</a></li>
+
+            <li class="dropdown">
+
+                <a href="#" id="purpose">Our Purpose <i class="fa fa-caret-down"></i></a>
+
+                <ul class="dropdown-content">
+
+                    <li><a href="topic_1.html" target = "_blank">Fitness and Exercise</a></li>
+                    <li><a href="topic_2.html" target = "_blank">Nutrition and Diet</a></li>
+                    <li><a href="topic_3.html" target = "_blank">Mental Health and Mindfulness</a></li>
+                    <li><a href="topic_4.html" target = "_blank">Infection Prevention and Control (IPC)</a></li>
+                    <li><a href="topic_5.html" target = "_blank">Self-Care Practices</a></li>
+                    <li><a href="topic_6.html" target = "_blank">Sleep Hygiene</a></li>
+                    
+                </ul>
+            </li>
+
+            <li>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </li>
+        </ul>
+
+        <div class="menu">
+
+            <label for="chck1">
+                <i class="fa fa-bars"></i>
+            </label>
+            
+        </div>
+
+    </header>
+    
+    <main>
+
+        <div class="feedback-container">
+
+            <h2>Feedback Form</h2>
+            <p>Thank you for taking time to provide feedback. We appreciate hearing from you and will review your comments carefully.</p>
+            
+            <hr>
+
+            <form action="submit_feedback.php" method="POST">
+
+                <div class="question">
+
+                    <p>Would you recommend it to your friends and colleagues?</p>
+
+                    <label>
+                        <input type="radio" name="recommendation" value="yes"> Yes
+                    </label>
+
+                    <label>
+                        <input type="radio" name="recommendation" value="no"> No
+                    </label>
+
+                </div>
+
+                <div class="question">
+
+                    <br><p>Do you have any suggestions to improve our website?</p>
+                    <textarea id ="txtarea" name="suggestions" rows="4" required></textarea>
+
+                </div>
+
+                <div class="question">
+
+                    <p>How satisfied are you with our website overall?</p>
+
+                    <div class="rating">
+
+                        <input type="radio" id="star1" name="rating" value="1">
+                        <label for="star1" title="1 stars">★</label>
+                        <input type="radio" id="star2" name="rating" value="2">
+                        <label for="star2" title="2 stars">★</label>
+                        <input type="radio" id="star3" name="rating" value="3">
+                        <label for="star3" title="3 stars">★</label>
+                        <input type="radio" id="star4" name="rating" value="4">
+                        <label for="star4" title="4 stars">★</label>
+                        <input type="radio" id="star5" name="rating" value="5">
+                        <label for="star5" title="5 star">★</label>
+
+                    </div>
+
+                </div>
+
+                <div class="question">
+
+                    <br><p>To the best of your knowledge, is this feedback something that others in your situation would also share?</p>
+                    
+                    <label>
+                        <input type="radio" name="share" value="yes"> Yes
+                    </label>
+
+                    <label>
+                        <input type="radio" name="share" value="no"> No
+                    </label>
+
+                </div>
+
+                <div class="question">
+
+                    <br><p>Please leave your name and email address if you would like us to contact you regarding any questions.</p>
+                    
+                    <div class="name-email">
+
+                        <div class="input-group">
+
+                            <label>Full Name</label>
+                            <input type="text" name="first_name" placeholder="First Name" required>
+                            <input type="text" name="last_name" placeholder="Last Name" required>
+
+                        </div>
+
+                        <div class="input-group">
+
+                            <label>E-mail Address</label>
+                            <input type="email" name="email" placeholder="example@example.com" required>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <button type="submit">Submit</button>
+
+            </form>
+
+        </div>
+
+    </main> <br>
+    
+</body>
+</html>
